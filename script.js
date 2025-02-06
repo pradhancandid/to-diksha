@@ -47,26 +47,29 @@ function showAnimation(day) {
   let emoji = "";
 
   switch (day) {
-    case 1:
+    case 7:
       emoji = "🌹";
       break; // Rose Day
-    case 2:
+    case 8:
       emoji = "💍";
       break; // Propose Day
-    case 3:
+    case 9:
       emoji = "🍫";
       break; // Chocolate Day
-    case 4:
+    case 10:
       emoji = "🧸";
       break; // Teddy Day
-    case 5:
+    case 11:
       emoji = "🤞";
       break; // Promise Day
-    case 6:
+    case 12:
       emoji = "🤗";
       break; // Hug Day
-    case 7:
+    case 13:
       emoji = "😘";
+      break; // Kiss Day
+    case 14:
+      emoji = "❤️";
       break; // Kiss Day
   }
 
