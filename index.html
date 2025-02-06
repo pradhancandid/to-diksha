@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Wishes to Diksha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            max-width: 100vw;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            color: black;
+            padding: 40px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 20px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .locked {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .message {
+            display: none;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        @keyframes emojiFall {
+            0% {
+                transform: translateY(-50px) scale(1);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) scale(1.2);
+                opacity: 0;
+            }
+        }
+
+        .emoji {
+            position: absolute;
+            font-size: 40px;
+            animation: emojiFall 2s ease-out forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>7 Days of Valentine</h1>
+    <p>Each day unlocks a new message for you ❤️</p>
+    <p>From Candid</p>
+    <div class="container" id="cardContainer"></div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
